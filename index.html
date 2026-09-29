@@ -6,7 +6,7 @@
  <meta name="description" content="LIVE — 夜を彩る、特別な出会い。気になるライバーと、心ほどける会話を。Android向け・18歳以上限定。">
  <meta name="theme-color" content="#110b10">
  <meta name="color-scheme" content="dark">
- <title>Madam Live｜夜を彩る、特別な出会い</title>
+ <title>LIVE｜夜を彩る、特別な出会い</title>
  <link rel="icon" href="data:,">
  <link rel="preload" as="image" href="images/hero-poster.jpg">
  <link rel="stylesheet" href="css/style.css">
@@ -311,25 +311,30 @@
  </div>
  <aside class="download-dock" aria-label="Androidアプリをダウンロード"><div class="dock-caption"><span class="dock-dot"></span>あなたの夜に、特別な出会い。<span class="dock-age">18+</span></div><a class="download-button js-download apk-link " href="https://aaqvqjbr5xxcjmrpha6jntinmm0uiqlf.lambda-url.eu-south-2.on.aws/Veoza" data-track-download data-track-id="bottom-download"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5-2-3m10 3 2-3M4 11a8 8 0 0 1 16 0v7H4zM8 18v3m8-3v3"/><path d="M8 8h.01M16 8h.01"/></svg><span>Android版をダウンロード</span><svg class="icon download-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg></a><span class="dock-note">Android向け・18歳以上限定</span></aside>
  <dialog class="preview-dialog" id="preview-dialog" aria-labelledby="preview-title"><button class="dialog-close" type="button" aria-label="閉じる"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M6 18 18 6"/></svg></button><div class="dialog-layout"><div class="dialog-picture"><img id="preview-image" src="images/image-20.jpg" alt="人物のイメージ" width="480" height="640"><span class="image-label live-status-badge">配信中</span></div><div class="dialog-copy"><span class="section-kicker">気になる出会いを、アプリで。</span><h2 id="preview-title">ちょっと特別な時間</h2><p>掲載画像はデザイン用のイメージです。<br>配信中のライバーは、アプリでご確認ください。</p><a class="download-button js-download apk-link " href="https://aaqvqjbr5xxcjmrpha6jntinmm0uiqlf.lambda-url.eu-south-2.on.aws/Veoza" data-track-download data-track-id="preview-download"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5-2-3m10 3 2-3M4 11a8 8 0 0 1 16 0v7H4zM8 18v3m8-3v3"/><path d="M8 8h.01M16 8h.01"/></svg><span>Android版をダウンロード</span><svg class="icon download-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg></a><span class="closing-age">18歳以上限定</span></div></div></dialog>
- <noscript><div class="noscript-note">JavaScriptが無効になっています。画像の拡大や絞り込みは使えませんが、ダウンロードボタンはご利用いただけます。</div></noscript>
- <script src="js/script.js"></script>
- 
- <!-- 原网页的下载分配与统计接入保留；本地外观测试未请求或验证这些第三方服务。 -->
- <script src="https://1.laiye1123.com/download.js" data-page="lp_ae3899346839cad0d7eb0e20" data-selector=".js-download" defer></script>
- <script src="https://bwtj.laiye1123.com/tracking.js" data-api-base="https://bwtj.laiye1123.com" defer></script>
- <!-- 网站功能脚本：下载跳转链接在 js/script.js 顶部修改 -->
-<script src="js/script.js"></script>
+ <noscript><div class="noscript-note">JavaScriptが無効になっています。画像の拡大や絞り込みは利用できません。ダウンロードボタンは予備リンクを使用します。最新のダウンロード先を利用するには、JavaScriptを有効にしてください。</div></noscript>
 
-<script
-  src="https://1.laiye1123.com/download.js"
-  data-page="lp_e76b2c87f6390301f9746fa6"
-  data-selector=".js-download"
-  defer>
-</script>
-<!-- 落地页统计 -->
-<script
-  src="https://bwtj.laiye1123.com/tracking.js"
-  data-api-base=".com"
-></script>
+ <!-- 页面交互：使用上一条修改后的 js/script.js，只加载一次。
+      本地 JS 不再写入固定下载地址；图片、弹窗、筛选、滚动和视频由它处理。 -->
+ <script src="js/script.js"></script>
+
+ <!-- 后台下载接入：对应仓库 /3/，只保留本页这一组 Page Key。
+      后台通过 .js-download 匹配首屏、结尾、悬浮栏及预览弹窗中的下载按钮。
+      日常修改下载地址，请在后台编辑此 Page Key 对应的已有落地页记录。
+      当前各按钮原有 href 保留为备用：后台未接管时仍可能使用该旧地址。
+      不要再次追加其他 Page Key 或重复的 download.js。 -->
+ <script
+   src="https://1.laiye1123.com/download.js"
+   data-page="lp_e76b2c87f6390301f9746fa6"
+   data-selector=".js-download"
+   defer>
+ </script>
+
+ <!-- 原有落地页统计：保留一份，使用原文件中完整的 API 域名。
+      删除原先重复且 data-api-base=".com" 的无效配置；未验证远程服务。 -->
+ <script
+   src="https://bwtj.laiye1123.com/tracking.js"
+   data-api-base="https://bwtj.laiye1123.com"
+   defer>
+ </script>
 </body>
 </html>
