@@ -6,7 +6,7 @@ const DOWNLOAD_URL = "https://aaqvqjbr5xxcjmrpha6jntinmm0uiqlf.lambda-url.eu-sou
 const OPEN_IN_NEW_TAB = false;
 
 // 视频未提供时留空。放入 videos/hero.mp4 后，将下一行改成 "videos/hero.mp4"。
-const BACKGROUND_VIDEO_URL = "";
+const BACKGROUND_VIDEO_URL = "videos/hero.mp4";;
 // 如需上移/下移背景人物，可修改这里。例如 "50% 20%"、"50% 50%"。
 const BACKGROUND_VIDEO_POSITION = "50% 28%";
 
