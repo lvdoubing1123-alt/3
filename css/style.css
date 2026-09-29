@@ -36,3 +36,61 @@ h1{font-family:var(--serif);font-size:clamp(42px,5.2vw,66px);font-weight:600;lin
  .hero-poster{object-fit:cover;object-position:50% 23%;transform:none;opacity:.56}
  .hero-shade{background:linear-gradient(90deg,#120a12cf,#2c112165 48%,#120a12ad),linear-gradient(180deg,#10080d33,#2b102029 34%,#110b10 100%)}
 }
+
+/* =============================================================
+   LIVE card badge: red dot + 配信中
+   HTML: <span class="image-label live-status-badge">配信中</span>
+   This block matches the badge styles embedded in the updated HTML.
+   One ::before pseudo-element draws the dot; no extra element is needed.
+   These are display styles only, not a real-time streaming-status check.
+   All original layout, video, button and responsive rules remain above.
+============================================================= */
+/* 图片左上角：红点 + 配信中。仅为展示样式，不读取真实直播状态。 */
+.image-label.live-status-badge {
+ position: absolute;
+ left: 10px;
+ top: 10px;
+ z-index: 2;
+ display: inline-flex;
+ align-items: center;
+ gap: 5px;
+ padding: 5px 8px;
+ border: 1px solid rgba(255, 112, 150, .35);
+ border-radius: 999px;
+ background: rgba(40, 10, 23, .84);
+ color: #fff;
+ -webkit-backdrop-filter: blur(8px);
+ backdrop-filter: blur(8px);
+ font-size: 11px;
+ font-weight: 700;
+ line-height: 1.2;
+ letter-spacing: .04em;
+ white-space: nowrap;
+ pointer-events: none;
+}
+.image-label.live-status-badge::before {
+ content: "";
+ display: block;
+ flex: 0 0 6px;
+ width: 6px;
+ height: 6px;
+ border-radius: 50%;
+ background: #ff334b;
+ box-shadow: 0 0 0 2px rgba(255, 51, 75, .12),
+             0 0 7px rgba(255, 51, 75, .35);
+}
+@media (max-width: 640px) {
+ .image-label.live-status-badge {
+  left: 8px;
+  top: 8px;
+  padding: 4px 7px;
+  font-size: 10px;
+ }
+ .teaser-card .image-label.live-status-badge {
+  left: 7px;
+  top: 7px;
+  padding: 4px 6px;
+  font-size: 9px;
+  gap: 4px;
+ }
+}
