@@ -1,5 +1,5 @@
 /**
- * LIVE / 日语落地页交互脚本 — 平滑轨道版 smooth-20260929-1。
+ * LIVE / 日语落地页交互脚本 — 自动播放兼容修正版 smooth-20260929-2-auto。
  *
  * 下载地址由 index.html 中的后台 download.js 接管。
  * 本文件不设置下载按钮的 href、target，也不绑定下载跳转事件。
@@ -19,6 +19,7 @@
     // 防止本地交互重复初始化；HTML 中的重复 script 标签仍应删除。
     if (root.dataset.liveUiInitialized === "true") return;
     root.dataset.liveUiInitialized = "true";
+    root.dataset.liveUiVersion = "smooth-20260929-2-auto";
 
     const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
     const year = document.getElementById("copyright-year");
@@ -100,12 +101,61 @@
     let pageActive = true;
     const motionButton = document.getElementById("motion-toggle");
 
-    const rails = [...document.querySelectorAll("[data-rail]")].map((element, index) => {
-      // CSS 未同时更新或浏览器不支持时，保留原生手动滚动，不破坏布局。
-      if (typeof element.animate !== "function" ||
-          getComputedStyle(element).getPropertyValue("--rail-transform-ready").trim() !== "1") {
-        return null;
-      }
+    const railElements = [...document.querySelectorAll("[data-rail]")];
+
+    // 兼容旧 CSS / 缓存未同步：缺少轨道布局时自动补齐，而不是关闭自动滚动。
+    // 仅补充图片轨道样式，不改品牌、下载链接、页面内容或视频配置。
+    if (railElements.some((element) =>
+      getComputedStyle(element).getPropertyValue("--rail-transform-ready").trim() !== "1"
+    ) && !document.getElementById("madam-live-rail-layout-fallback")) {
+      const style = document.createElement("style");
+      style.id = "madam-live-rail-layout-fallback";
+      style.textContent = `
+        .portrait-rail {
+          --rail-transform-ready: 1;
+          scroll-behavior: auto;
+          scroll-snap-type: none;
+          overflow-anchor: none;
+        }
+        .portrait-rail > .portrait-track {
+          display: flex;
+          flex: 0 0 auto;
+          gap: inherit;
+          width: max-content;
+          max-width: none;
+          align-items: stretch;
+          transform: translate3d(0, 0, 0);
+        }
+        .portrait-rail.is-auto-scrolling > .portrait-track {
+          will-change: transform;
+        }
+        .portrait-rail.is-dragging,
+        .portrait-rail.is-dragging .portrait-card {
+          cursor: grabbing;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+        .portrait-rail img { -webkit-user-drag: none; }
+        .portrait-rail .image-label,
+        .portrait-rail .image-label.live-status-badge {
+          -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+        }
+        .portrait-rail .portrait-card img { transition: transform .3s; }
+        .portrait-rail .portrait-card:hover img {
+          filter: saturate(.76) brightness(.89);
+        }
+        .download-dock {
+          -webkit-backdrop-filter: none;
+          backdrop-filter: none;
+        }
+      `;
+      document.head.appendChild(style);
+    }
+
+    const rails = railElements.map((element, index) => {
+      // 极旧浏览器没有动画接口时仍保留手动横向滚动。
+      if (typeof element.animate !== "function") return null;
       const track = document.createElement("div");
       track.className = "portrait-track";
       // 移动原节点而不克隆：图片点击事件、卡片顺序与可访问名称都保留。
@@ -385,8 +435,8 @@
       window.addEventListener("resize", queueMeasure, { passive: true });
       window.addEventListener("load", queueMeasure, { once: true });
     }
+    // 页面真正隐藏时暂停；仅操作浏览器工具栏/弹窗导致失焦，不再停掉整页动画。
     document.addEventListener("visibilitychange", syncRails);
-    window.addEventListener("blur", () => { pageActive = false; syncRails(); });
     window.addEventListener("focus", () => { pageActive = true; syncRails(); });
     window.addEventListener("pagehide", () => { pageActive = false; syncRails(); });
     window.addEventListener("pageshow", () => { pageActive = true; syncRails(); queueMeasure(); });
@@ -473,10 +523,13 @@
     }
   }
 
-  // 兼容脚本放在页面底部，或使用 defer 加载。
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", init, { once: true });
-  } else {
+  // 本页面脚本在 HTML 底部：所需节点已存在就直接启动，不等待后面的第三方 defer 脚本。
+  // 若将本文件放到 head，页面节点尚未建立时仍等待 DOMContentLoaded。
+  const pageMarkupReady = document.querySelector("[data-rail]") &&
+    document.getElementById("preview-dialog");
+  if (document.readyState !== "loading" || pageMarkupReady) {
     init();
+  } else {
+    document.addEventListener("DOMContentLoaded", init, { once: true });
   }
 })();
