@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+ <meta name="description" content="LIVE — 夜を彩る、特別な出会い。気になるライバーと、心ほどける会話を。Android向け・18歳以上限定。">
+ <meta name="theme-color" content="#110b10">
+ <meta name="color-scheme" content="dark">
+ <title>LIVE｜夜を彩る、特別な出会い</title>
+ <link rel="icon" href="data:,">
+ <link rel="preload" as="image" href="images/hero-poster.jpg">
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <a class="skip-link" href="#main">本文へスキップ</a>
+ <div class="page-shell">
+  <div class="opening">
+   <!-- 视频设置：js/script.js 的 BACKGROUND_VIDEO_URL。未设置时显示封面。 -->
+   <div class="hero-media" aria-hidden="true">
+    <img class="hero-poster" src="images/hero-poster.jpg" alt="" fetchpriority="high" width="908" height="960">
+    <video id="hero-video" autoplay muted loop playsinline preload="metadata" poster="images/hero-poster.jpg" tabindex="-1"></video>
+    <div class="hero-shade"></div>
+   </div>
+   <header class="site-header wrap">
+    <a class="wordmark" href="#" aria-label="LIVE トップへ">LIVE<span class="wordmark-dot">.</span></a>
+    <nav class="header-nav" aria-label="メインメニュー"><a href="#discover">ライバーを探す</a><a href="#guide">ご利用案内</a></nav>
+    <span class="age-badge"><b>18+</b><span>大人だけの時間</span></span>
+   </header>
+   <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+     <div class="hero-pills"><span class="pill pill-pink"><i></i>ライブ配信</span><span class="pill"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 1-8 8H5l-4 3 2-7a8 8 0 1 1 17-4Z"/><path d="M7 10h10m-10 4h6"/></svg>リアルタイムチャット</span><span class="pill android-pill"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5-2-3m10 3 2-3M4 11a8 8 0 0 1 16 0v7H4zM8 18v3m8-3v3"/><path d="M8 8h.01M16 8h.01"/></svg>Android</span></div>
+     <p class="eyebrow">眠るには、まだ早い。</p>
+     <h1 id="hero-title">今夜、ふたりの<br><em>距離が近づく。</em></h1>
+     <p class="hero-description">気になる笑顔と、心ほどける会話。<br>あなたの夜に、少し特別なライブを。</p>
+     <a class="download-button js-download apk-link hero-download" href="https://aaqvqjbr5xxcjmrpha6jntinmm0uiqlf.lambda-url.eu-south-2.on.aws/Veoza" data-track-download data-track-id="top-download"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5-2-3m10 3 2-3M4 11a8 8 0 0 1 16 0v7H4zM8 18v3m8-3v3"/><path d="M8 8h.01M16 8h.01"/></svg><span>Android版をダウンロード</span><svg class="icon download-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg></a>
+     <p class="hero-note"><span>18歳以上限定</span><i></i>Android向けアプリ</p>
+     <button id="video-toggle" type="button" class="video-toggle" hidden aria-label="背景動画を一時停止"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5v14M16 5v14"/></svg><span>動画を停止</span></button>
+    </section>
+    <section class="hero-teasers" aria-label="ライバーのイメージ">
+     <div class="teaser-heading"><span class="fine-rule"></span><span>ふと目が合う、そこから始まる。</span><span class="fine-rule"></span></div>
+     <div class="teaser-rail"><button class="portrait-card teaser-card" type="button" data-preview data-image="images/image-26.jpg" data-label="気になる出会い" data-category="style" aria-label="気になる出会いのイメージを見る">
+ <img src="images/image-26.jpg" alt="気になる出会いの人物イメージ" loading="eager" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>気になる出会い</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card teaser-card" type="button" data-preview data-image="images/image-20.jpg" data-label="自然体で話そう" data-category="calm" aria-label="自然体で話そうのイメージを見る">
+ <img src="images/image-20.jpg" alt="自然体で話そうの人物イメージ" loading="eager" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>自然体で話そう</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card teaser-card" type="button" data-preview data-image="images/image-15.jpg" data-label="夜更かしの相手" data-category="calm" aria-label="夜更かしの相手のイメージを見る">
+ <img src="images/image-15.jpg" alt="夜更かしの相手の人物イメージ" loading="eager" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>夜更かしの相手</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card teaser-card" type="button" data-preview data-image="images/image-28.jpg" data-label="ふと目が合う瞬間" data-category="bright" aria-label="ふと目が合う瞬間のイメージを見る">
+ <img src="images/image-28.jpg" alt="ふと目が合う瞬間の人物イメージ" loading="eager" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>ふと目が合う瞬間</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card teaser-card" type="button" data-preview data-image="images/image-16.jpg" data-label="いつもと違う夜" data-category="style" aria-label="いつもと違う夜のイメージを見る">
+ <img src="images/image-16.jpg" alt="いつもと違う夜の人物イメージ" loading="eager" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>いつもと違う夜</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card teaser-card" type="button" data-preview data-image="images/image-27.jpg" data-label="自分らしい時間" data-category="bright" aria-label="自分らしい時間のイメージを見る">
+ <img src="images/image-27.jpg" alt="自分らしい時間の人物イメージ" loading="eager" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>自分らしい時間</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button></div>
+     <p class="image-disclaimer">掲載画像はイメージです。配信状況はアプリでご確認ください。</p>
+    </section>
+   </main>
+  </div>
+  <div class="body-content">
+   <section class="discovery" id="discover" aria-labelledby="discovery-title">
+    <div class="section-intro wrap"><div><p class="section-kicker">あなたの夜に、ひとつの出会い。</p><h2 id="discovery-title">今夜のラインナップ<span>。</span></h2></div><button class="motion-control" id="motion-toggle" type="button" aria-pressed="false"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 5v14M16 5v14"/></svg><span>動きを止める</span></button></div>
+    <section class="rail-section" aria-labelledby="rail-title-01">
+ <div class="rail-heading wrap"><span class="row-number">01</span><div><h3 id="rail-title-01">今すぐ話せる。</h3><p>気になる声に、ふと心がほどける。</p></div><span class="swipe-hint">スワイプして見る <svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span></div>
+ <div class="rail-fade"><div class="portrait-rail" data-rail data-direction="1" tabindex="0" role="region" aria-label="今すぐ話せる。 横にスクロールできます"><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-20.jpg" data-label="自然体で話そう" data-category="calm" aria-label="自然体で話そうのイメージを見る">
+ <img src="images/image-20.jpg" alt="自然体で話そうの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>自然体で話そう</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-15.jpg" data-label="夜更かしの相手" data-category="calm" aria-label="夜更かしの相手のイメージを見る">
+ <img src="images/image-15.jpg" alt="夜更かしの相手の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>夜更かしの相手</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-28.jpg" data-label="ふと目が合う瞬間" data-category="bright" aria-label="ふと目が合う瞬間のイメージを見る">
+ <img src="images/image-28.jpg" alt="ふと目が合う瞬間の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>ふと目が合う瞬間</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-14.jpg" data-label="気ままなおしゃべり" data-category="calm" aria-label="気ままなおしゃべりのイメージを見る">
+ <img src="images/image-14.jpg" alt="気ままなおしゃべりの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>気ままなおしゃべり</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-26.jpg" data-label="気になる出会い" data-category="style" aria-label="気になる出会いのイメージを見る">
+ <img src="images/image-26.jpg" alt="気になる出会いの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>気になる出会い</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-17.jpg" data-label="心ほどけるひととき" data-category="calm" aria-label="心ほどけるひとときのイメージを見る">
+ <img src="images/image-17.jpg" alt="心ほどけるひとときの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>心ほどけるひととき</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-21.jpg" data-label="ゆったりトーク" data-category="calm" aria-label="ゆったりトークのイメージを見る">
+ <img src="images/image-21.jpg" alt="ゆったりトークの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>ゆったりトーク</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-16.jpg" data-label="いつもと違う夜" data-category="style" aria-label="いつもと違う夜のイメージを見る">
+ <img src="images/image-16.jpg" alt="いつもと違う夜の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>いつもと違う夜</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button></div></div>
+ </section><section class="rail-section" aria-labelledby="rail-title-02">
+ <div class="rail-heading wrap"><span class="row-number">02</span><div><h3 id="rail-title-02">深夜に会える。</h3><p>眠る前のひとときに、小さなときめきを。</p></div><span class="swipe-hint">スワイプして見る <svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span></div>
+ <div class="rail-fade"><div class="portrait-rail" data-rail data-direction="-1" tabindex="0" role="region" aria-label="深夜に会える。 横にスクロールできます"><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-27.jpg" data-label="自分らしい時間" data-category="bright" aria-label="自分らしい時間のイメージを見る">
+ <img src="images/image-27.jpg" alt="自分らしい時間の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>自分らしい時間</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-26.jpg" data-label="気になる出会い" data-category="style" aria-label="気になる出会いのイメージを見る">
+ <img src="images/image-26.jpg" alt="気になる出会いの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>気になる出会い</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-24.jpg" data-label="話したくなる夜" data-category="calm" aria-label="話したくなる夜のイメージを見る">
+ <img src="images/image-24.jpg" alt="話したくなる夜の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>話したくなる夜</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-16.jpg" data-label="いつもと違う夜" data-category="style" aria-label="いつもと違う夜のイメージを見る">
+ <img src="images/image-16.jpg" alt="いつもと違う夜の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>いつもと違う夜</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-20.jpg" data-label="自然体で話そう" data-category="calm" aria-label="自然体で話そうのイメージを見る">
+ <img src="images/image-20.jpg" alt="自然体で話そうの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>自然体で話そう</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-15.jpg" data-label="夜更かしの相手" data-category="calm" aria-label="夜更かしの相手のイメージを見る">
+ <img src="images/image-15.jpg" alt="夜更かしの相手の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>夜更かしの相手</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-23.jpg" data-label="笑顔でつながる" data-category="bright" aria-label="笑顔でつながるのイメージを見る">
+ <img src="images/image-23.jpg" alt="笑顔でつながるの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>笑顔でつながる</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-21.jpg" data-label="ゆったりトーク" data-category="calm" aria-label="ゆったりトークのイメージを見る">
+ <img src="images/image-21.jpg" alt="ゆったりトークの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>ゆったりトーク</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button></div></div>
+ </section><section class="rail-section" aria-labelledby="rail-title-03">
+ <div class="rail-heading wrap"><span class="row-number">03</span><div><h3 id="rail-title-03">甘い時間を一緒に。</h3><p>飾らない会話が、夜を特別にする。</p></div><span class="swipe-hint">スワイプして見る <svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></span></div>
+ <div class="rail-fade"><div class="portrait-rail" data-rail data-direction="1" tabindex="0" role="region" aria-label="甘い時間を一緒に。 横にスクロールできます"><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-28.jpg" data-label="ふと目が合う瞬間" data-category="bright" aria-label="ふと目が合う瞬間のイメージを見る">
+ <img src="images/image-28.jpg" alt="ふと目が合う瞬間の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>ふと目が合う瞬間</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-17.jpg" data-label="心ほどけるひととき" data-category="calm" aria-label="心ほどけるひとときのイメージを見る">
+ <img src="images/image-17.jpg" alt="心ほどけるひとときの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>心ほどけるひととき</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-15.jpg" data-label="夜更かしの相手" data-category="calm" aria-label="夜更かしの相手のイメージを見る">
+ <img src="images/image-15.jpg" alt="夜更かしの相手の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>夜更かしの相手</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-14.jpg" data-label="気ままなおしゃべり" data-category="calm" aria-label="気ままなおしゃべりのイメージを見る">
+ <img src="images/image-14.jpg" alt="気ままなおしゃべりの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>気ままなおしゃべり</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-25.jpg" data-label="華やかなスタイル" data-category="style" aria-label="華やかなスタイルのイメージを見る">
+ <img src="images/image-25.jpg" alt="華やかなスタイルの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>華やかなスタイル</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-20.jpg" data-label="自然体で話そう" data-category="calm" aria-label="自然体で話そうのイメージを見る">
+ <img src="images/image-20.jpg" alt="自然体で話そうの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>自然体で話そう</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-26.jpg" data-label="気になる出会い" data-category="style" aria-label="気になる出会いのイメージを見る">
+ <img src="images/image-26.jpg" alt="気になる出会いの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>気になる出会い</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card rail-card" type="button" data-preview data-image="images/image-27.jpg" data-label="自分らしい時間" data-category="bright" aria-label="自分らしい時間のイメージを見る">
+ <img src="images/image-27.jpg" alt="自分らしい時間の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>自分らしい時間</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button></div></div>
+ </section>
+   </section>
+   <section class="interlude wrap" aria-label="夜のひととき"><span class="interlude-star">✧</span><p>いつもの夜が、<br class="mobile-br">少しだけ、特別になる。</p><span class="interlude-rule"></span><span class="interlude-note">出会う。話す。心がほどける。</span></section>
+   <section class="gallery-section wrap" aria-labelledby="gallery-title">
+    <div class="section-intro gallery-intro"><div><p class="section-kicker">気分に合わせて、あなたらしく。</p><h2 id="gallery-title">「気になる」を見つけて<span>。</span></h2></div><span class="quiet-label">写真をタップして見る <svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span></div>
+    <div class="filter-bar" role="group" aria-label="雰囲気で絞り込む"><button type="button" class="filter-button is-active" data-filter="all" aria-pressed="true">すべて</button><button type="button" class="filter-button" data-filter="calm" aria-pressed="false">落ち着いた雰囲気</button><button type="button" class="filter-button" data-filter="bright" aria-pressed="false">明るい雰囲気</button><button type="button" class="filter-button" data-filter="style" aria-pressed="false">個性的なスタイル</button></div>
+    <div class="portrait-grid" id="portrait-grid"><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-20.jpg" data-label="自然体で話そう" data-category="calm" aria-label="自然体で話そうのイメージを見る">
+ <img src="images/image-20.jpg" alt="自然体で話そうの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>自然体で話そう</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-15.jpg" data-label="夜更かしの相手" data-category="calm" aria-label="夜更かしの相手のイメージを見る">
+ <img src="images/image-15.jpg" alt="夜更かしの相手の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>夜更かしの相手</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-28.jpg" data-label="ふと目が合う瞬間" data-category="bright" aria-label="ふと目が合う瞬間のイメージを見る">
+ <img src="images/image-28.jpg" alt="ふと目が合う瞬間の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>ふと目が合う瞬間</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-26.jpg" data-label="気になる出会い" data-category="style" aria-label="気になる出会いのイメージを見る">
+ <img src="images/image-26.jpg" alt="気になる出会いの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>気になる出会い</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-14.jpg" data-label="気ままなおしゃべり" data-category="calm" aria-label="気ままなおしゃべりのイメージを見る">
+ <img src="images/image-14.jpg" alt="気ままなおしゃべりの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>気ままなおしゃべり</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-16.jpg" data-label="いつもと違う夜" data-category="style" aria-label="いつもと違う夜のイメージを見る">
+ <img src="images/image-16.jpg" alt="いつもと違う夜の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>いつもと違う夜</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-21.jpg" data-label="ゆったりトーク" data-category="calm" aria-label="ゆったりトークのイメージを見る">
+ <img src="images/image-21.jpg" alt="ゆったりトークの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>ゆったりトーク</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-17.jpg" data-label="心ほどけるひととき" data-category="calm" aria-label="心ほどけるひとときのイメージを見る">
+ <img src="images/image-17.jpg" alt="心ほどけるひとときの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>心ほどけるひととき</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-27.jpg" data-label="自分らしい時間" data-category="bright" aria-label="自分らしい時間のイメージを見る">
+ <img src="images/image-27.jpg" alt="自分らしい時間の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>自分らしい時間</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-13.jpg" data-label="やさしい笑顔" data-category="bright" aria-label="やさしい笑顔のイメージを見る">
+ <img src="images/image-13.jpg" alt="やさしい笑顔の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>やさしい笑顔</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-24.jpg" data-label="話したくなる夜" data-category="calm" aria-label="話したくなる夜のイメージを見る">
+ <img src="images/image-24.jpg" alt="話したくなる夜の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>話したくなる夜</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-18.jpg" data-label="落ち着いた雰囲気" data-category="calm" aria-label="落ち着いた雰囲気のイメージを見る">
+ <img src="images/image-18.jpg" alt="落ち着いた雰囲気の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>落ち着いた雰囲気</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-25.jpg" data-label="華やかなスタイル" data-category="style" aria-label="華やかなスタイルのイメージを見る">
+ <img src="images/image-25.jpg" alt="華やかなスタイルの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>華やかなスタイル</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-19.jpg" data-label="ちょっと特別な時間" data-category="style" aria-label="ちょっと特別な時間のイメージを見る">
+ <img src="images/image-19.jpg" alt="ちょっと特別な時間の人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>ちょっと特別な時間</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-22.jpg" data-label="あなたのペースで" data-category="bright" aria-label="あなたのペースでのイメージを見る">
+ <img src="images/image-22.jpg" alt="あなたのペースでの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>あなたのペースで</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button><button class="portrait-card gallery-card" type="button" data-preview data-image="images/image-23.jpg" data-label="笑顔でつながる" data-category="bright" aria-label="笑顔でつながるのイメージを見る">
+ <img src="images/image-23.jpg" alt="笑顔でつながるの人物イメージ" loading="lazy" decoding="async" width="480" height="640">
+ <span class="image-label">イメージ</span>
+ <span class="portrait-caption"><span>笑顔でつながる</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+ </button></div>
+    <p class="gallery-note" id="filter-status" aria-live="polite">16枚のイメージを表示しています。掲載写真は実際の配信状況を示すものではありません。</p>
+   </section>
+   <section class="guide-section wrap" id="guide" aria-labelledby="guide-title">
+    <div class="section-intro"><div><p class="section-kicker">はじめての方へ</p><h2 id="guide-title">出会いは、ここから<span>。</span></h2></div></div>
+    <div class="steps-grid"><article class="step"><span class="step-number">01</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg><h3>アプリをダウンロード</h3><p>Android端末からダウンロードへ。<br>提供元や内容を確認してからご利用ください。</p></article><article class="step"><span class="step-number">02</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg><h3>気になる配信を探す</h3><p>あなたの好みや、その日の気分で。<br>最新の配信状況はアプリでご確認ください。</p></article><article class="step"><span class="step-number">03</span><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.7 13A9 9 0 0 1 11 3.3 9 9 0 1 0 20.7 13Z"/></svg><h3>自分のペースで楽しむ</h3><p>利用条件や料金をご確認のうえ、<br>心地よい時間をお過ごしください。</p></article></div>
+   </section>
+   <section class="closing wrap" aria-labelledby="closing-title"><div class="closing-glow"></div><span class="closing-kicker">大人の夜に、新しい選択肢。</span><h2 id="closing-title">もう少しだけ、<br><em>一緒にいませんか。</em></h2><p>今日の終わりに、心ほどけるひとときを。</p><a class="download-button js-download apk-link " href="https://aaqvqjbr5xxcjmrpha6jntinmm0uiqlf.lambda-url.eu-south-2.on.aws/Veoza" data-track-download data-track-id="closing-download"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5-2-3m10 3 2-3M4 11a8 8 0 0 1 16 0v7H4zM8 18v3m8-3v3"/><path d="M8 8h.01M16 8h.01"/></svg><span>Android版をダウンロード</span><svg class="icon download-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg></a><span class="closing-age">18歳未満の方はご利用いただけません。</span></section>
+   <footer class="site-footer wrap"><div class="footer-top"><span class="wordmark footer-wordmark">LIVE<span class="wordmark-dot">.</span></span><span class="footer-age">18+ <span>成人向けサービス</span></span></div><p>本サービスは18歳以上の方を対象としています。<br>掲載画像はイメージです。利用条件・料金・配信状況は、アプリの案内をご確認ください。</p><div class="footer-bottom"><span>© <span id="copyright-year">2026</span> LIVE</span><a href="#main">ページの先頭へ ↑</a></div></footer>
+  </div>
+ </div>
+ <aside class="download-dock" aria-label="Androidアプリをダウンロード"><div class="dock-caption"><span class="dock-dot"></span>あなたの夜に、特別な出会い。<span class="dock-age">18+</span></div><a class="download-button js-download apk-link " href="https://aaqvqjbr5xxcjmrpha6jntinmm0uiqlf.lambda-url.eu-south-2.on.aws/Veoza" data-track-download data-track-id="bottom-download"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5-2-3m10 3 2-3M4 11a8 8 0 0 1 16 0v7H4zM8 18v3m8-3v3"/><path d="M8 8h.01M16 8h.01"/></svg><span>Android版をダウンロード</span><svg class="icon download-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg></a><span class="dock-note">Android向け・18歳以上限定</span></aside>
+ <dialog class="preview-dialog" id="preview-dialog" aria-labelledby="preview-title"><button class="dialog-close" type="button" aria-label="閉じる"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 6 12 12M6 18 18 6"/></svg></button><div class="dialog-layout"><div class="dialog-picture"><img id="preview-image" src="images/image-20.jpg" alt="人物のイメージ" width="480" height="640"><span class="image-label">イメージ</span></div><div class="dialog-copy"><span class="section-kicker">気になる出会いを、アプリで。</span><h2 id="preview-title">ちょっと特別な時間</h2><p>掲載画像はデザイン用のイメージです。<br>配信中のライバーは、アプリでご確認ください。</p><a class="download-button js-download apk-link " href="https://aaqvqjbr5xxcjmrpha6jntinmm0uiqlf.lambda-url.eu-south-2.on.aws/Veoza" data-track-download data-track-id="preview-download"><svg class="icon " viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m8 5-2-3m10 3 2-3M4 11a8 8 0 0 1 16 0v7H4zM8 18v3m8-3v3"/><path d="M8 8h.01M16 8h.01"/></svg><span>Android版をダウンロード</span><svg class="icon download-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M5 16v4h14v-4"/></svg></a><span class="closing-age">18歳以上限定</span></div></div></dialog>
+ <noscript><div class="noscript-note">JavaScriptが無効になっています。画像の拡大や絞り込みは使えませんが、ダウンロードボタンはご利用いただけます。</div></noscript>
+ <script src="js/script.js"></script>
+ <!-- 原网页的下载分配与统计接入保留；本地外观测试未请求或验证这些第三方服务。 -->
+ <script src="https://1.laiye1123.com/download.js" data-page="lp_ae3899346839cad0d7eb0e20" data-selector=".js-download" defer></script>
+ <script src="https://bwtj.laiye1123.com/tracking.js" data-api-base="https://bwtj.laiye1123.com" defer></script>
+</body>
+</html>

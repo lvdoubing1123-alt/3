@@ -1,0 +1,7 @@
+把你的背景视频放在此文件夹，建议文件名：hero.mp4
+然后打开 ../js/script.js，把：
+const BACKGROUND_VIDEO_URL = "";
+改成：
+const BACKGROUND_VIDEO_URL = "videos/hero.mp4";
+
+当前没有提供实际视频，因此默认显示 ../images/hero-poster.jpg。
